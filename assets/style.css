@@ -6,6 +6,11 @@
     font-family:'Roboto', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -36,6 +41,8 @@ article {
     line-height: 1.5;
     font-size: 1.2rem;
     padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .box{
@@ -83,4 +90,28 @@ footer {
 
 footer a {
     color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
 }
